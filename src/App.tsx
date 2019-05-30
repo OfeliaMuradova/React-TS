@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import UserInput from './components/UserInput';
+import UserOutput from './components/UserOutput';
 import './App.css';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+
+
+  
+  // state = {
+  //   someList: [
+  //     {a: "b"}
+  //   ],
+  //   someVar: "a string"
+  // }
+  
+  // fillList = () => {
+  //   this.setState({
+  //     someVar: "new string", 
+  //     someList: [ 
+  //       {d: "c"} 
+  //     ]
+  //   });
+  //   console.log(this.state.someList)
+  // }
+
+  // scream = () => {
+  //   alert("Aaaaaaaaaaaaaaa");
+  // }
+
+  render(){
+    return (
+         <div className="App">
+          <UserOutput></UserOutput>
+          <UserOutput></UserOutput>
+         </div>
+      );
+  }
+
 }
 
 export default App;
